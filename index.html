@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="icon" href="icon/icons8-chatbot-94.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div class="music-player">
+        <audio src="music/01.Catchy Beatz & Sajad Shahi - Haydeh.mp3" id="audio"></audio>
+        <div class="header">
+            <div class="image">
+                <img src="image/Pooria_putak.jpg">
+            </div>
+            <div class="information">
+                <div class="system">kali linux</div>
+                <div class="song-name">music foul</div>
+                <div class="singer">Shahi</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="playear">
+            <div class="time-line" id="time-line">
+                <div class="bacound"></div>
+                <div class="fill" id="fill"></div>
+                <div class="fill-btn" id="fill-btn"></div>
+                <div id="left-width-time-line"></div>
+                <div id="right-width-time-line"></div>
+            </div>
+            <div class="under-time-line">
+                <span id="time-past">0:00</span>
+                <span id="time-left">-0:0</span>
+            </div>
+            <div class="button">
+                <button class="btn">
+                    <img src="image/Next button.png" style="transform: rotateY(180deg);" id="back-btn" onclick="back()" >
+                </button>
+                <button class="btn">
+                    <img src="image/play button.png" id="play-pouse" onclick="play_and_pouse()">
+                </button>
+                <button class="btn">
+                    <img src="image/Next button.png" id="go-btn" onclick="next()">
+                </button>
+            </div>
+            <div class="volume-style">
+                <div class="volume" id="volume">
+                    <div class="background"></div>
+                    <div class="fill"></div>
+                    <div class="fill-btn"></div>
+                    <div id="left-width-volume"></div>
+                    <div id="right-width-volume"></div>
+                    <div id="volume-value">100</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scriptvolume.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
